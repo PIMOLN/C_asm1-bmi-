@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-    float weight;
     float height;
-    printf("Enter weight : ");
-    scanf("%f",&weight);
-    printf("Enter height : ");
+    float weight;
+    printf("enter height : ");
     scanf("%f",&height);
-    float n = height/100;
-    float BMI = weight/(n*n);
+    printf("enter weight : ");
+    scanf("%f",&weight);
+    float m = height/100;
+    float BMI = weight/(pow(m,2));
     printf("%.2f\n",BMI);
     if (BMI<18.5)
     {
@@ -25,5 +25,3 @@ int main(){
     }
     return 0;
 }
-
-
